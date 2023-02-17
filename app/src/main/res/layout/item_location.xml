@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/item_location_marginBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_location_content_padding"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_location_button_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/location_card_image_corner_radius">
+            <ImageView
+                android:id="@+id/iv_location_image"
+                android:layout_width="@dimen/item_location_image_size"
+                android:layout_height="@dimen/item_location_image_size"
+                android:background="@color/blue_color"
+                android:contentDescription="@string/image_contentDescription"
+                android:src="@drawable/ic_explore"
+                app:civ_border_color="@color/border_color"
+                app:civ_border_width="@dimen/item_location_image_circular_width_size"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_location_detail_layout_marginStart"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/item_location_name_text_size"
+                android:textStyle="bold"
+                tools:text="Location Name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_location_divider_height"
+        android:layout_marginTop="@dimen/item_location_divider_marginTop"
+        android:background="@color/border_color" />
+
+</LinearLayout>

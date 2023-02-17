@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_location_marginBottom">10dp</dimen>
+    <dimen name="item_location_content_padding">10dp</dimen>
+    <dimen name="item_location_image_size">60dp</dimen>
+    <dimen name="item_location_image_circular_width_size">0.5dp</dimen>
+    <dimen name="item_location_detail_layout_marginStart">10dp</dimen>
+    <dimen name="item_location_name_text_size">18sp</dimen>
+    <dimen name="item_location_divider_height">0.3dp</dimen>
+    <dimen name="item_location_divider_marginTop">5dp</dimen>
+    <dimen name="location_card_image_corner_radius">17dp</dimen>
+</resources>
